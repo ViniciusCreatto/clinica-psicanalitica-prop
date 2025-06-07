@@ -1,0 +1,272 @@
+:root {
+    --primary-color: #4169E1; /* Azul mais escuro */
+    --primary-dark: #2E4B8C; /* Azul ainda mais escuro */
+    --secondary-color: #F0F8FF;
+    --text-dark: #333;
+    --text-light: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --whatsapp-color: #25D366;
+}
+
+/* Hero Section com fundo azul bebê */
+.hero-section {
+    background-color: var(--secondary-color);
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.1) 0%, rgba(96, 152, 255, 0.1) 100%);
+    pointer-events: none;
+}
+
+/* Botões mais profissionais */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* Links de Navegação */
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Estado ativo do link */
+.nav-link.active {
+    color: #fff !important;
+}
+
+/* Estilos específicos para garantir que os itens do navbar sejam brancos */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #fff !important;
+}
+
+/* Cards de Serviços com fundo azul bebê */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Ícones dos Serviços */
+.bi-chat-left-text-fill,
+.bi-people-fill,
+.bi-people {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Formulário de Contato */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25);
+}
+
+/* Botões do formulário */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* Preços dos serviços */
+.badge {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0 2rem;
+}
+
+footer h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+footer i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    footer .row {
+        text-align: center;
+    }
+    
+    footer .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Botão WhatsApp Flutuante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--whatsapp-color);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    display: block;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+}
+
+/* Botão de Agendamento */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* Links de Navegação */
+.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Cards de Serviços */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ícones dos Serviços */
+.bi-chat-left-text-fill,
+.bi-people-fill,
+.bi-people {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Formulário de Contato */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25);
+}
+
+/* Toasts */
+.toast {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+}

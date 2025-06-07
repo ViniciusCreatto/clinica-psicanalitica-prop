@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fundo suave -->
+    <rect width="100%" height="100%" fill="var(--primary-color)"/>
+    
+    <!-- Cérebro -->
+    <g fill="white">
+        <path d="M400 150
+            Q450 180, 500 150
+            Q550 180, 600 200
+            Q650 220, 700 250
+            Q750 280, 750 350
+            Q750 420, 700 450
+            Q650 480, 600 500
+            Q550 520, 500 550
+            Q450 580, 400 600
+            Q350 580, 300 550
+            Q250 520, 200 500
+            Q150 480, 100 450
+            Q50 420, 50 350
+            Q50 280, 100 250
+            Q150 220, 200 200
+            Q250 180, 300 150
+            Z"/>
+        
+        <path d="M400 200
+            Q450 230, 500 200
+            Q550 230, 600 250
+            Q650 270, 700 300
+            Q750 330, 750 400
+            Q750 470, 700 500
+            Q650 530, 600 550
+            Q550 570, 500 600
+            Q450 630, 400 650
+            Q350 630, 300 600
+            Q250 570, 200 550
+            Q150 530, 100 500
+            Q50 470, 50 400
+            Q50 330, 100 300
+            Q150 270, 200 250
+            Q250 230, 300 200
+            Z"/>
+    </g>
+    
+    <!-- Frase impactante -->
+    <text x="50%" y="400" text-anchor="middle" font-family="Arial" font-size="40" fill="white">
+        <tspan x="50%" dy="-50">"A psicanálise é a chave</tspan>
+        <tspan x="50%" dy="50">para entender a mente humana"</tspan>
+    </text>
+    
+    <!-- Linhas de efeito -->
+    <path d="M100 100 L700 100 L700 500 L100 500 Z" fill="none" stroke="var(--primary-dark)" stroke-width="2" opacity="0.3"/>
+    <circle cx="400" cy="300" r="200" fill="none" stroke="var(--primary-dark)" stroke-width="2" opacity="0.3"/>
+</svg>
