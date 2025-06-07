@@ -4,6 +4,6 @@ $images = @{
 }
 
 foreach ($image in $images.GetEnumerator()) {
-    $outputPath = Join-Path "C:\Users\Ana Julia\CascadeProjects\clinica-psicanalitica\assets" $image.Key
+    $outputPath = Join-Path "C:\Users\Ana Julia\CascadeProjects\clinica-psicanalitica\assets\images" $image.Key
     Invoke-WebRequest -Uri $image.Value -OutFile $outputPath
 }
